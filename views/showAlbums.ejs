@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecommendMe</title>
+</head>
+<body>
+    <h1>RecomendMe</h1>
+    <div class="flex-container">
+        <div id="albumindex">
+            <h2>Albums</h2>
+            <% for (let album of albums) { %>
+                <figure class="album-show-card">
+                <img alt="<%= album.name%>" src="<%= album.cover %>" width="300">
+                <h2><%=album.title%></h2>
+                <h3><%=album.artist%></h3>
+                
+                </figure>
+            <%}%>
+        
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -63,35 +63,35 @@ const seed_albums = [
         title: "Take Care",
         artist: "Drake",
         notable_songs: "Marvin's Room, Cameras",
-        cover: "/public/assets/takecare.jpg",
+        cover: "/assets/takecare.jpg",
         likes: 1
     },
     {
         title: "Punk",
         artist: "Young Thug",
         notable_songs: "Yea Yea Yea, Bubbly",
-        cover: "/public/assets/young-thug-punk-cover.jpeg",
+        cover: "/assets/young-thug-punk-cover.jpeg",
         likes: 1
     },
     {
         title: "2000",
         artist: "Joey Bada$$",
         notable_songs: "Show Me, Where I Belong",
-        cover: "/public/assets/joey-badass-2000-album-stream.jpeg",
+        cover: "assets/joey-badass-2000-album-stream.jpeg",
         likes: 1
     },
     {
         title: "6pc Hot - EP",
         artist: "6LACK",
         notable_songs: "Long Nights",
-        cover: "/public/assets/6lack.jpeg",
+        cover: "/assets/6lack.jpeg",
         likes: 4
     },
     {
         title: "After Hourse",
         artist: "The Weeknd",
         notable_songs: "Snowchild, After Hours",
-        cover: "/public/assets/c73fm7-afterhours-preview-m3.jpg",
+        cover: "/assets/c73fm7-afterhours-preview-m3.jpg",
         likes: 5
     },
 ]

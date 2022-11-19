@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecommendMe</title>
+</head>
+<body>
+    <h1>RecomendMe</h1>
+    <div class="flex-container">
+        <div id="albumindex">
+            <a href="/albums">
+            <h2>Albums</h2>
+            <% for (let album of albums) { %>
+                <figure class="album-card">
+                <img alt="<%= album.name%>" src="<%= album.cover %>" width="300">
+                </figure>
+            <%}%>
+        </a>
+        </div>
+        <div id="movieindex">
+            <a href="/movies">
+                <h2>Movies</h2>
+                <% for (let movie of movies) { %>
+                    <figure class="movie-card">
+                    <img alt="<%= movie.name%>" src="<%= movie.poster %>" width="300">
+                    </figure>
+                <%}%>
+            </a>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -45,7 +45,7 @@ app.get('/', (req,res) => {
 
 
 
-app.use('/album', albumsCtrl)
+app.use('/albums', albumsCtrl)
 app.use('/movies', moviesCtrl)
 
 
