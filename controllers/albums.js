@@ -12,6 +12,14 @@ router.get('/', (req, res) => {
     })
 })
 
+
+// Get New Album Page
+router.get('/new', (req,res) => {
+    res.render('newAlbum', {
+        tabTitle: "New Album"
+    })
+})
+// Show One Album Page
 router.get('/:id', (req, res) => {
     db.Album.findById((req.params.id), (err,albums) => {
         // res.send(albums.artist)
@@ -21,6 +29,44 @@ router.get('/:id', (req, res) => {
         })
     })
 })
+
+// Create New Album 
+
+router.post('/', (req,res) => {
+    db.Album.create(req.body, (err, albums) => {
+        res.redirect('/')
+    })
+})
+
+// Delete album route
+router.delete('/:id', (req,res) => {
+    db.Album.findByIdAndDelete(req.params.id, (err, albums) => {
+        res.redirect('/')
+    })
+})
+
+
+
+// Edit Route
+
+router.put('/:id', (req, res) => {
+    db.Album.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, albums) => {
+        res.redirect('/albums/' + albums._id)
+    })
+    
+})
+
+router.get('/:id/edit', (req, res) => {
+    db.Album.findById(req.params.id, (err, albums) => {
+        res.render("editAlbum", {
+            albums: albums,
+            tabTitle: "Edit Album"
+        })
+    })
+})
+
+
+
 
 
 
