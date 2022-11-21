@@ -12,8 +12,15 @@ router.get('/', (req, res) => {
     })
 })
 
-
-
+router.get('/:id', (req, res) => {
+    db.Album.findById((req.params.id), (err,albums) => {
+        // res.send(albums.artist)
+        res.render('showOneAlbum', {
+            albums:albums,
+            tabTitle: albums.title
+        })
+    })
+})
 
 
 

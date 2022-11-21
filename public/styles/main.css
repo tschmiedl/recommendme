@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(39, 35, 35);
+}
+body h1 {
+    text-align: center;
+    color: aliceblue;
+    
+}
+.container {
+    justify-content: center;
+}
+
+.row{
+    text-align: center;
+    background-color: black
+}
