@@ -7,10 +7,27 @@ body h1 {
     
 }
 .container {
+    /* display: flex; */
     justify-content: center;
+    
+}
+.container h1 {
+    justify-content: center;
+    color: aliceblue;
 }
 
 .row{
     text-align: center;
-    background-color: black
+    color: aliceblue;
+    padding: 3em;
 }
+
+.card{
+    background-color: rgb(39, 35, 35);
+    border-radius: 0;
+    border:5px;
+    align-items: center;
+    padding: 1em;
+
+}
+

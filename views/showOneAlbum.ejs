@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=tabTitle%></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/main.css">
+
 </head>
 <body>
-    <h3><a href="/">Back to Albums</a></h3>
+    <h3><a href="/albums/">Back to Albums</a></h3>
     <div class="row">
         <div class="col-sm-6">
             <img alt="<%= albums.name%>" src="<%= albums.cover %>" width="400">
@@ -18,13 +20,16 @@
             <h3><%=albums.artist%></h3>
             <h4>Notable Songs: <%=albums.notable_songs%></h4>
             <h4>
-                <button type="submit"><%=albums.likes%> Likes</button>
+                
+                <form action="/albums/<%= albums._id %>/like?_method=PUT" method="POST">
+                    <button type="submit"><%=albums.likes%> Likes</button></form>
+                
             </h4>
             <br>
             <h5><a href="/albums/<%= albums._id %>/edit"><button>Edit Album</button></a></h5>
             
             <h5><form action="/albums/<%= albums._id %>?_method=DELETE" method="POST">
-                <button type="submit">Delete Item</button>
+                <button type="submit">Delete Album</button>
             </form></h5>
         </div>
     </div>

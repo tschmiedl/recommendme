@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecommendMe</title>
+    <link rel="stylesheet" href="/albums.css">
+</head>
+<body>
+    <h1>RecommendMe</h1>
+    <div class="flex-container">
+        <div id="albumindex">
+            <h2>Movies</h2>
+            <% for (let movie of movies) { %>
+                
+                <figure class="movie-show-card">
+                    <a href="/movies/<%=movie._id%>">
+                    <img alt="<%= movie.title%>" src="<%=movie.poster%>" width="300">
+                <h2><%=movie.title%></h2>
+                <h3><%=movie.director%></h3>
+            </a>
+        </figure>
+            
+            <%}%>
+        
+        </div>
+        <h2><a href="/movies/new">Add a movie</a></h2>
+    </div>
+    
+</body>
+</html>

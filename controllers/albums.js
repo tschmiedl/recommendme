@@ -2,6 +2,8 @@ const db = require("../models")
 const express = require('express')
 const router = express.Router()
 
+
+// Show All Albums Route
 router.get('/', (req, res) => {
     db.Album.find({}, (err, albums) => {
         res.render('showAlbums', {
@@ -66,7 +68,16 @@ router.get('/:id/edit', (req, res) => {
 })
 
 
-
+// Like button
+router.put('/:id/like', (req, res) => {
+    db.Album.findById(req.params.id, (err, albums) => {
+        
+        db.Album.findByIdAndUpdate(req.params.id, {likes: albums.likes + 1}, {new: true}, (err, albums) => {
+            res.redirect('/albums/' + albums._id)
+        })
+    })
+   
+})
 
 
 
