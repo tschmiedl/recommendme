@@ -23,11 +23,11 @@ router.get('/new', (req,res) => {
 })
 // Show One Album Page
 router.get('/:id', (req, res) => {
-    db.Album.findById((req.params.id), (err,albums) => {
+    db.Album.findById((req.params.id), (err, albums) => {
         // res.send(albums.artist)
         res.render('showOneAlbum', {
-            albums:albums,
-            tabTitle: albums.title
+            albums: albums,
+            tabTitle: "Title"
         })
     })
 })

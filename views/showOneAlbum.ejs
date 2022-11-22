@@ -12,10 +12,10 @@
 <body>
     <h3><a href="/albums/">Back to Albums</a></h3>
     <div class="row">
-        <div class="col-sm-6">
-            <img alt="<%= albums.name%>" src="<%= albums.cover %>" width="400">
+        <div class="col-sm-12">
+            <img alt="<%= albums.title%>" src="<%= albums.cover %>" id="cover-image">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <h2><%=albums.title%></h2>
             <h3><%=albums.artist%></h3>
             <h4>Notable Songs: <%=albums.notable_songs%></h4>
