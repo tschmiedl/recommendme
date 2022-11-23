@@ -22,7 +22,13 @@
             <h4>
                 
                 <form action="/albums/<%= albums._id %>/like?_method=PUT" method="POST">
-                    <button type="submit"><%=albums.likes%> Likes</button></form>
+                    <button type="submit"><%=albums.likes%> 
+                        <% if (albums.likes < 2) { %>
+                            Like
+                       <% } else { %>
+                            Likes
+                       <% } %>
+                    </button></form>
                 
             </h4>
             <br>

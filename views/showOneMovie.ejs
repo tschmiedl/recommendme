@@ -20,7 +20,14 @@
             <h4>Release Date: <%=movies.release_date%></h4>
             <h5><%=movies.review%></h5>
             <h4>
-                <button type="submit"><%=movies.likes%> Likes</button>
+                <form action="/movies/<%= movies._id %>/like?_method=PUT" method="POST">
+                <button type="submit"><%=movies.likes%> 
+                    <% if (movies.likes < 2) { %>
+                        Like
+                   <% } else { %>
+                        Likes
+                   <% } %>   
+                </button></form>
             </h4>
 
             <br>
