@@ -57,42 +57,48 @@ const seed_albums = [
         artist: "Radiohead, 15 Step",
         notable_songs: "All I Need, 15 Step",  
         cover: "https://static.stereogum.com/uploads/2017/09/In-Rainbows-1506460221.jpg",
-        likes: 1
+        likes: 1,
+        spotify: "5vkqYmiPBYLaalcmjujWxK"
     },
     {
         title: "Take Care",
         artist: "Drake",
         notable_songs: "Marvin's Room, Cameras",
         cover: "/assets/takecare.jpg",
-        likes: 1
+        likes: 1,
+        spotify: "6X1x82kppWZmDzlXXK3y3q"
     },
     {
         title: "Punk",
         artist: "Young Thug",
         notable_songs: "Yea Yea Yea, Bubbly",
         cover: "/assets/young-thug-punk-cover.jpeg",
-        likes: 1
+        likes: 1,
+        spotify: "7IKkHmEk4It4cRdOYanyvW"
     },
     {
         title: "2000",
         artist: "Joey Bada$$",
         notable_songs: "Show Me, Where I Belong",
         cover: "assets/joey-badass-2000-album-stream.jpeg",
-        likes: 1
+        likes: 1,
+        spotify: "5lICxaH7i12zXxQGjd2Mjn"
     },
     {
         title: "6pc Hot - EP",
         artist: "6LACK",
         notable_songs: "Long Nights",
         cover: "/assets/6lack.jpeg",
-        likes: 4
+        likes: 4,
+        spotify: "37O0Syq7Db1kydzUH8TbwB"
     },
     {
         title: "After Hourse",
         artist: "The Weeknd",
         notable_songs: "Snowchild, After Hours",
         cover: "/assets/c73fm7-afterhours-preview-m3.jpg",
-        likes: 5
+        likes: 5,
+        spotify: "742eAldb4AJKLoPgJhGRE7"
     },
 ]
 

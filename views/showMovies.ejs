@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="/styles/main.css">
     </head>
 <body>
-    <h1>RecommendMe</h1>
-    <h3><a href="/">Home</a></h3>
+    <h1><a href="/">RecommendMe</a></h1>
     <div class="container">
         <h1>Movies</h1>
         <h2><a href="/movies/new">Recommend a Movie</a></h2>
@@ -17,7 +16,7 @@
             
             <section>
             <% for (let movie of movies) { %>
-                    <div class="container reveal fade-bottom">
+                    <div class="container reveal fade-bottom" id="movielist">
                     <a href="/movies/<%=movie._id%>">
                     <img alt="<%= movie.title%>" src="<%=movie.poster%>" id="poster-image">
                     </a>

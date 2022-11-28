@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <h1><a href="/">RecommendMe</a></h1>
     <h3><a href="/movies/">Back to Movies</a></h3>
     <div class="row">
         <div class="col-sm-6">
@@ -21,13 +22,14 @@
             <h5><%=movies.review%></h5>
             <h4>
                 <form action="/movies/<%= movies._id %>/like?_method=PUT" method="POST">
-                <button type="submit"><%=movies.likes%> 
-                    <% if (movies.likes < 2) { %>
-                        Like
-                   <% } else { %>
-                        Likes
-                   <% } %>   
-                </button></form>
+                    <button type="submit"><%=movies.likes%> 
+                        <% if (movies.likes === 1) { %>
+                            Like
+                       <% } else { %>
+                            Likes
+                       <% } %>
+                    </button></form>
+                
             </h4>
 
             <br>

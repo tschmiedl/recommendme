@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <h1><a href="/">RecommendMe</a></h1>
     <h3><a href="/albums/">Back to Albums</a></h3>
     <div class="row">
         <div class="col-sm-12">
@@ -20,10 +21,10 @@
             <h3><%=albums.artist%></h3>
             <h4>Notable Songs: <%=albums.notable_songs%></h4>
             <h4>
-                
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/<%= albums.spotify %>?utm_source=generator" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 <form action="/albums/<%= albums._id %>/like?_method=PUT" method="POST">
                     <button type="submit"><%=albums.likes%> 
-                        <% if (albums.likes < 2) { %>
+                        <% if (albums.likes === 1) { %>
                             Like
                        <% } else { %>
                             Likes

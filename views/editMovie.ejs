@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Movie</title>
+</head>
+<body>
+    <h3><a href="/">Back to Movies</a></h3>
+    
+    
+    <div class="createNewProduct">
+        <form action ="/movies/<%= movies._id %>?_method=PUT" method="post" id="createForm">
+            <input type="text" name="title" placeholder="Title" required value="<%= movies.title %>" />
+            <input type="text" name="artist" placeholder="Artist" value="<%= albums.artist %>" />
+            <input type="text" name="notable_songs" placeholder="Notable Songs" value="<%=albums.notable_songs%>" />
+            <input type="text" name="img" value="<%= albums.cover %> " />
+            
+            <input type="number" name="likes" placeholder="1" value="<%=albums.likes %>" />
+            <button type="submit">Edit Album</button>
+        </form>
+    </div>
+    
+</body>
+</html>
