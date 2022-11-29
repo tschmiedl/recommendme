@@ -43,7 +43,7 @@ router.post('/', (req,res) => {
 // Delete Movie route
 router.delete('/:id', (req,res) => {
     db.Movie.findByIdAndDelete(req.params.id, (err, movies) => {
-        res.redirect('/')
+        res.redirect('/movies')
     })
 })
 

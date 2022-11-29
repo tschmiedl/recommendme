@@ -43,7 +43,7 @@ router.post('/', (req,res) => {
 // Delete album route
 router.delete('/:id', (req,res) => {
     db.Album.findByIdAndDelete(req.params.id, (err, albums) => {
-        res.redirect('/')
+        res.redirect('/albums')
     })
 })
 
