@@ -23,7 +23,6 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
-    console.log('I run for all routes');
     next();
 });
 
@@ -52,5 +51,4 @@ app.use('/movies', moviesCtrl)
 // Listener
 
 app.listen(port, () => {
-    console.log(`App is running at localhost:${port}`)
 })
