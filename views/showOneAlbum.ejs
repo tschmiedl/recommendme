@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=tabTitle%></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/main.css">
-
+    <%- include ('./partials/header.ejs') %>
+    <link rel="stylesheet" href="/styles/albums.css">
 </head>
 <body>
-    <h1><a href="/">RecommendMe</a></h1>
-    <h3><a href="/albums/">Back to Albums</a></h3>
+    <img src="<%=albums.cover%>" id="albumbg">
+    <h1 id="homebutton"><a href="/">RecommendMe</a></h1>
+    <h2 id="backbutton"><a href="/albums/">Back to Albums</a></h2>
     <div class="row">
-        <div class="col-sm-12">
-            <img alt="<%= albums.title%>" src="<%= albums.cover %>" id="cover-image">
-        </div>
+       
         <div class="col-sm-12">
             <h2><%=albums.title%></h2>
             <h3><%=albums.artist%></h3>

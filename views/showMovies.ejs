@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RecommendMe</title>
-        <link rel="stylesheet" href="/styles/main.css">
+        <%- include ('./partials/header.ejs') %>
     </head>
 <body>
-    <h1><a href="/">RecommendMe</a></h1>
+    <h1 id="homebutton"><a href="/">RecommendMe</a></h1>
     <div class="container">
-        <h1>Movies</h1>
-        <h2><a href="/movies/new">Recommend a Movie</a></h2>
+        <h1 id="homebutton">Movies</h1>
+        <h2><a href="/movies/new">Add a Movie</a></h2>
         
             
             <section>
@@ -22,7 +18,6 @@
                     </a>
                     </div>
             <%}%>
-        
             </section>
     </div>
     <!-- https://alvarotrigo.com/blog/css-animations-scroll/ -->

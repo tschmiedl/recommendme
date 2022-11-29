@@ -1,12 +1,14 @@
 body {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: rgb(39, 35, 35);
 }
-body h1 {
+#homebutton {
     margin-top: 5%;
     text-align: center;
     color: aliceblue;
-    
+}
+#backbutton {
+  padding-left: 1%;
 }
 .container-fluid {
     display: flex;
@@ -60,6 +62,38 @@ a:hover {
 a:hover img {
   filter: contrast(1.1)
 }
+
+#createForm {
+  
+  text-align: center;
+  padding: 10%
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px black;
+  box-sizing: border-box;
+  width: 100%
+}
+
+button {
+  border-radius: 1em;
+}
+
+#spotifyinstructions {
+  margin: 0 auto;
+  display: flex;
+}
+#spotifyinstructions img {
+  width: 80%;
+  padding-top:1%;
+  margin: 0 auto;
+}
+
+.EditItem {
+
+}
+
 /* Implemented the scroll reveal from here https://alvarotrigo.com/blog/css-animations-scroll/ */
     .reveal {
     position: relative;

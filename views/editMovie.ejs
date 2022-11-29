@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Movie</title>
-</head>
+    <%- include ('./partials/header.ejs') %>
 <body>
-    <h3><a href="/">Back to Movies</a></h3>
+    <h1 id="homebutton"><a href="/">RecommendMe</a></h1>
+    <h3><a href="/movies">Back to Movies</a></h3>
     
-    
-    <div class="createNewProduct">
+    <div class="EditItem">
         <form action ="/movies/<%= movies._id %>?_method=PUT" method="post" id="createForm">
             <input type="text" name="title" placeholder="Title" required value="<%= movies.title %>" />
-            <input type="text" name="artist" placeholder="Artist" value="<%= albums.artist %>" />
-            <input type="text" name="notable_songs" placeholder="Notable Songs" value="<%=albums.notable_songs%>" />
-            <input type="text" name="img" value="<%= albums.cover %> " />
+            <input type="text" name="director" placeholder="Director" value="<%= movies.director %>" />
+            <input type="text" name="release_date" placeholder="Release Date" value="<%=movies.release_date%>" />
+            <input type="text" name="poster" value="<%= movies.poster %> " />
+            <input type="text" name="review" value="<%= movies.review %>" />
             
-            <input type="number" name="likes" placeholder="1" value="<%=albums.likes %>" />
-            <button type="submit">Edit Album</button>
+            <input type="number" name="likes" placeholder="1" value="<%=movies.likes %>" />
+            <button type="submit">Save Edit</button>
         </form>
     </div>
     
