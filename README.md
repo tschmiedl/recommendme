@@ -1,8 +1,8 @@
 # recommendme
 
-On this project I used Javascript, CSS, EJS to host HTML, Express, Mongoose for the database, Method-Override to update/delete and Dot Env. I hosted my project using Mongo Atlas and Railway. 
+On this project I used Javascript, CSS, Bootstrap, EJS to host HTML, Express, Mongoose for the database, Method-Override to update/delete and Dot Env. I hosted my project using Mongo Atlas and Railway. 
 
-My approach was to credit a clean and user-friendly website to view music and movies. I started with the wireframes which evolved once I reached the individual show pages but otherwise stayed mostly the same. The routes I envisioned before starting stayed the same. I started with the file structure and then made my Schemas to form the data. I then created the routes and basic show pages before styling and fleshing those out. 
+My approach was to create a clean and user-friendly website to view music and movies. I started with the wireframes which evolved once I reached the individual show pages but otherwise stayed mostly the same. The routes I envisioned before starting stayed the same. I started with the file structure and then made my Schemas to form the data. I then created the routes and basic show pages before styling and fleshing those out. 
 
 I researched websites I am a fan of for inspiration and found most used React so I was not able to get my homepage to look how I wanted which is an unsolved problem that I will revisit. 
 
