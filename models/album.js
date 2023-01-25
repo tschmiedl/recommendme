@@ -6,7 +6,7 @@ const albumSchema = new Schema(
         title: {type: String, required: true},
         artist: {type: String},
         notable_songs: {type: String},
-        cover: {type: String, default: 'https://img.freepik.com/premium-vector/vector-3d-realistic-blank-cd-dvd-with-paper-cover-case-box-set-closeup-isolated-white-background-design-template-mockup-cd-packaging-copy-space-top-view_153563-2891.jpg'},
+        cover: {type: String, default: 'https://as1.ftcdn.net/v2/jpg/03/58/60/38/1000_F_358603890_21vrEGHhfKZv7zUnvpMbG6iSuT0ahUfa.jpg'},
         likes: {type: Number, default: 0, min: 0},
         spotify: {type: String}
     }
